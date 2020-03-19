@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:src="@drawable/text_only" />
+
+    <TextView
+    android:layout_marginTop="-190dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sign Up"
+    android:textColor="@color/redColor"
+        android:textStyle="bold"
+android:textSize="40sp"
+    android:layout_gravity="center"/>
+
+
+    <EditText
+        android:id="@+id/edtname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_perm_identity_black_24dp"
+        android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+        android:hint="Name"
+        android:textAlignment="center"
+        android:textColor="#FF0000" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginLeft="100dp"
+        android:hint="Age"
+        android:textColor="@color/redColor"
+        android:drawableLeft="@drawable/ic_access_time_black_24dp"
+        android:drawableStart="@drawable/ic_access_time_black_24dp"
+        android:id="@+id/edtage"/>
+
+    <TextView
+      android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:textColor="@color/redColor"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:textAlignment="center"
+        android:hint=" Select Gender"
+        android:drawableStart="@drawable/ic_wc_black_24dp"/>
+
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="120dp"
+        android:textAlignment="center"
+        android:id="@+id/rdbgrp">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:id="@+id/rdb1"
+            android:textColor="@color/redColor"
+            android:text="Male"
+            />
+        <RadioButton
+            android:id="@+id/rdb2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Female"
+            android:textColor="@color/redColor" />
+
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtcontact"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:drawableStart="@drawable/ic_local_phone_black_24dp"
+        android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+        android:hint="Contact Number"
+        android:textAlignment="center"
+        android:textColor="@color/redColor" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:textAlignment="center"
+        android:hint="Email"
+        android:id="@+id/edtemail"
+        android:textColor="@color/redColor"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:drawableStart="@drawable/ic_email_black_24dp"/>
+
+    <EditText
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginLeft="100dp"
+        android:hint="Password 8 characters"
+        android:textColor="@color/redColor"
+        android:inputType="textPassword"
+        android:id="@+id/edtpassowrd"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawableStart="@drawable/ic_lock_black_24dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/showPwd_check"/>
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:background="@color/redColor"
+            android:text="Sign Up"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/whiteColor"/>
+
+
+</LinearLayout>
+</ScrollView>
